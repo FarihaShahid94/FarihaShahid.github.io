@@ -1,3 +1,4 @@
+```yaml
 name: Deploy site
 
 on:
@@ -67,19 +68,16 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v5
-    
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
-    
       - name: Setup Python 🐍
         uses: actions/setup-python@v6
         with:
           python-version: "3.13"
           cache: "pip"
-    
       - name: Setup Node 🧰
         uses: actions/setup-node@v5
         with:
@@ -109,3 +107,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+```
