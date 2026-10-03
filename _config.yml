@@ -1,26 +1,25 @@
-# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
+title: # leave blank so your full name is used
+first_name: Fariha
+middle_name:
+last_name: Shahid
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Feel free to reach out for software engineering, AI, data science, and research opportunities.
+
+description: >
+  Software Engineer and AI/Data Science researcher interested in building intelligent,
+  practical software systems and exploring agentic AI, machine learning, and multimodal AI.
+
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+  © 2026 Fariha Shahid. Built with al-folio and hosted on GitHub Pages.
+
+keywords: software engineer, AI engineer, data science, machine learning, LLMs, agentic AI, research, portfolio
+lang: en
+icon: 👩🏻‍💻
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://FarihaShahid.github.io
+baseurl:
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -110,8 +109,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -136,8 +135,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Notes
+blog_description: Notes on AI, software engineering, research, and technology
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -174,16 +173,36 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+  posts:
+    - title: "Complete Guide to Traffic Management in Microservices"
+      url: "https://medium.com/@farihashahid9415/complete-guide-to-traffic-management-in-microservices-e91a82720128"
+      # date: 2024-01-01
+      tags: microservices, traffic-management
+
+    - title: "The Real Power of Prompt Engineering: Turning General Models into Domain Experts"
+      url: "https://medium.com/@farihashahid9415/the-real-power-of-prompt-engineering-turning-general-models-into-domain-experts-2fbaee6a6c64"
+      # date: 2024-01-01
+      tags: prompt-engineering, llms, ai
+
+    - title: "Leverage, Don't Reinvent: How Public LLMs Unlock AI for Everyone"
+      url: "https://medium.com/@farihashahid9415/leverage-dont-reinvent-how-public-llms-unlock-ai-for-everyone-90db2cdfa1fc"
+      # date: 2024-01-01
+      tags: llms, generative-ai, ai
+
+    - title: "Chunked and Streamed File Zipping in React"
+      url: "https://medium.com/@farihashahid9415/chunked-and-streamed-file-zipping-in-react-f8d13e465f35"
+      # date: 2024-01-01
+      tags: react, javascript, web-development
+
+    - title: "How Attention Mechanisms Enhance Convolutional Neural Networks (CNNs)"
+      url: "https://medium.com/@farihashahid9415/how-attention-mechanisms-enhance-convolutional-neural-networks-cnns-e100a12483e7"
+      # date: 2024-01-01
+      tags: deep-learning, cnn, attention-mechanisms
+
+    - title: "The Rise of Generative AI: Transforming Data Science and Beyond"
+      url: "https://medium.com/@farihashahid9415/the-rise-of-generative-ai-transforming-data-science-and-beyond-f801e41ef619"
+      # date: 2024-01-01
+      tags: generative-ai, data-science, ai
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -356,8 +375,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Shahid]
+  first_name: [Fariha]
 
   style: apa
   locale: en
@@ -383,10 +402,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: true
+  dimensions: true
+  google_scholar: true
+  inspirehep: false
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -479,7 +498,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables displaying social links in the navbar on the about page
+enable_navbar_social: true # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
